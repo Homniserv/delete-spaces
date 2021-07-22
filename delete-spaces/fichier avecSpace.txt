@@ -1,0 +1,30 @@
+package myPack;
+
+public class fichieravecSpace implements MainI {
+	public static void main(String[] args) {
+		fichieravecSpace main = new fichieravecSpace();
+		String res = main.rename("a b");
+		System.out.println(res);
+	}
+
+	@Override
+	public String findSpacedFile() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String findSpacedFileByRegex(String regex) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String rename(String fromName) {
+		String resu = fromName;
+		// fromName.trim();
+
+		// resu = fromName;
+		return resu.replace(" ", "");
+	}
+}
